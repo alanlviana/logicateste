@@ -84,10 +84,10 @@ public class VerificadorPolindromoTest {
 	public void deveTestarPolindromoCorretamente(){
 		VerificadorPalindromo verificador = new VerificadorPalindromo("ababa");
 		
-		Assert.assertTrue(verificador.isPolindromo("aabba", 2, 3));
-		Assert.assertFalse(verificador.isPolindromo("baaba", 2, 3));
-		Assert.assertTrue(verificador.isPolindromo("ababa", 2, 4));
-		Assert.assertTrue(verificador.isPolindromo("ababa", 0, 4));		
+		Assert.assertTrue(verificador.isPalindromo("aabba", 2, 3));
+		Assert.assertFalse(verificador.isPalindromo("baaba", 2, 3));
+		Assert.assertTrue(verificador.isPalindromo("ababa", 2, 4));
+		Assert.assertTrue(verificador.isPalindromo("ababa", 0, 4));		
 		
 	}		
 	

@@ -60,7 +60,7 @@ public class VerificadorPalindromo {
 		String palavraInvertida = inverterPalavra(verificacao.getInicioInversao(), verificacao.getFinalInversao());
 		
 		String retorno = null;
-		if (isPolindromo(palavraInvertida, verificacao.getInicioVerificacao(), verificacao.getFinalVerificacao())){
+		if (isPalindromo(palavraInvertida, verificacao.getInicioVerificacao(), verificacao.getFinalVerificacao())){
 			retorno = YES;
 		}else{
 			retorno = NO;
@@ -70,7 +70,7 @@ public class VerificadorPalindromo {
 		
 	}
 	
-	public boolean isPolindromo(String palavra, int inicioVerificacao, int finalVerificacao){
+	public boolean isPalindromo(String palavra, int inicioVerificacao, int finalVerificacao){
 		
 		String stringVerificada = palavra.substring(inicioVerificacao,finalVerificacao+1);
 		StringBuffer sb = new StringBuffer(stringVerificada).reverse();
